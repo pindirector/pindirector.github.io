@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pindirector.github.io/sitemap.xml

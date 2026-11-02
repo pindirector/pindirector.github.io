@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>핀볼 뽑기 - 무료 랜덤 추첨 게임</title>
+<meta name="description" content="이름만 넣으면 공이 핀과 포탈, 번개를 지나 골에 도착하는 순서로 당첨자를 뽑아 주는 무료 핀볼 랜덤 뽑기. 점심 메뉴, 커피 내기, 순서 정하기, 경품 추첨에.">
+<meta name="keywords" content="핀볼 뽑기, 랜덤 뽑기, 추첨 게임, 제비뽑기, 당첨자 뽑기, 커피 내기, 순서 정하기, 사다리타기">
+<link rel="canonical" href="https://pindirector.github.io/">
+<meta property="og:title" content="핀볼 뽑기 - 무료 랜덤 추첨 게임">
+<meta property="og:description" content="이름을 넣고 발사! 번개·포탈·깨지는 핀으로 막판 역전까지 나오는 핀볼 랜덤 뽑기.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pindirector.github.io/">
+<meta name="theme-color" content="#120d24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"핀볼 뽑기","url":"https://pindirector.github.io/","inLanguage":"ko"}</script>
+<style>
+/* Layout: single centered column — arcade marquee, play button, then plain reference sections. */
+:root{--bg:#120d24;--panel:#1d1638;--line:#3a2f66;--fg:#f3efff;--muted:#a79fcc;--hot:#ff4fa3;--gold:#ffd23f;--cyan:#3be8ff;
+  --f-display:"Black Han Sans","Noto Sans KR",system-ui,sans-serif;--f-tag:"Bungee",system-ui,sans-serif;--f-body:"Noto Sans KR",system-ui,-apple-system,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--fg)}
+body{margin:0;font:16px/1.7 var(--f-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:max(32px,env(safe-area-inset-top,0px)) 48px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+.hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.tag{font-family:var(--f-tag);font-size:12px;letter-spacing:.18em;color:var(--hot)}
+h1{margin:0;font:400 clamp(44px,12vw,72px)/1.05 var(--f-display);color:var(--gold);text-shadow:0 0 24px rgba(255,210,63,.35)}
+.lead{margin:0;font-size:18px;color:var(--fg);max-width:34em;text-wrap:pretty}
+.play{display:inline-block;margin-top:8px;border-radius:14px;padding:16px 28px;font:400 22px var(--f-display);letter-spacing:.04em;color:#1a0d1f;text-decoration:none;background:linear-gradient(180deg,#ff7cbc,var(--hot));box-shadow:0 5px 0 #a3226a,0 0 24px rgba(255,79,163,.4)}
+.play:active{transform:translateY(3px);box-shadow:0 2px 0 #a3226a}
+.play:focus-visible,a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+h2{margin:0 0 12px;font:400 24px var(--f-display);color:var(--fg);text-wrap:balance}
+section p{margin:0;color:var(--muted)}
+ol,ul{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px;color:var(--muted)}
+li b{color:var(--fg)}
+.uses{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.uses li{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 14px;color:var(--fg);font-size:14px}
+footer{max-width:640px;margin:48px auto 0;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer a{color:var(--cyan)}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="tag">PINBALL DRAW</span>
+    <h1>핀볼 뽑기</h1>
+    <p class="lead">이름만 넣고 발사하면, 공들이 핀과 범퍼, 포탈을 지나 골에 들어오는 순서로 당첨자를 뽑아 줘요. 설치도 로그인도 필요 없는 무료 랜덤 추첨 게임이에요.</p>
+    <a class="play" href="pinball.html">지금 바로 뽑기</a>
+  </header>
+
+  <section>
+    <h2>사용법</h2>
+    <ol>
+      <li>참가자 이름을 한 줄에 하나씩 적어요. <b>이름*3</b>처럼 쓰면 그 사람의 공이 3개 들어가요.</li>
+      <li>맵과 당첨 방식(먼저 도착 또는 꼴찌)을 골라요.</li>
+      <li><b>발사!</b>를 누르고 공이 골에 들어오는 순서를 지켜봐요.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>이런 점이 달라요</h2>
+    <ul>
+      <li><b>맵 5종</b> 클래식, 지그재그 계곡, 풍차 공장, 미로 탑, 파칭코 폭포</li>
+      <li><b>막판 역전</b> 번개, 지름길·되돌이 포탈, 부스터, 열리고 닫히는 골문</li>
+      <li><b>깨지는 핀</b> 앞선 공이 핀을 깨며 뚫은 길로 뒤따르는 공이 쫓아와요</li>
+      <li><b>도착 순위 전체 기록</b> 1등만이 아니라 순서 정하기에도 쓸 수 있어요</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>이럴 때 써 보세요</h2>
+    <ul class="uses">
+      <li>점심 메뉴 정하기</li><li>커피 내기</li><li>발표 순서 정하기</li><li>경품·당첨자 추첨</li><li>조 편성</li><li>청소 당번</li>
+    </ul>
+  </section>
+</main>
+<footer>만든 곳: <a href="https://pindirector.github.io/pindirector/">Pin Director</a> · 숏게임 계산 도구도 함께 써 보세요.</footer>
+</body>
+</html>
